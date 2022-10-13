@@ -59,7 +59,7 @@ app.use(express.json());
         const response = await request(`${generateScraperUrl(api_key)}&url=https://www.amazon.com/s?k=${searchQuery}`);
         res.json(JSON.parse(response));
 
-    }catch(error) {
+    }catch(error) { 
         res.json(error);
     }
  });
